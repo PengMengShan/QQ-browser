@@ -1,0 +1,148 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	overflow: hidden;
+}
+.page{
+	height: 100%;
+}
+.inner_c{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top: 10%;
+	left: 0;
+	perspective:300px;
+}
+.logo img{
+	display: none;
+}
+.skin1{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -440px;
+	perspective:300px;
+}
+.skin1 img{
+	display: none;
+}
+.skin2{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	margin-left: -440px;
+	perspective:300px;
+}
+.skin2 img{
+	display: none;
+}
+.clock_stage{
+	width: 381px;
+	height: 381px;
+	position: absolute;
+	top: 10%;
+	left: 10px;
+	perspective:300px;
+}
+.clock{
+	width: 381px;
+	height: 381px;
+	position: relative;
+	perspective:300px;
+	transform-style:preserve-3d;
+	display: none;
+}
+.clock img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.clock img:nth-child(1){
+	transform:translateZ(10px);
+}
+.clock img:nth-child(2){
+	transform:translateZ(20px);
+}
+.clock img:nth-child(3){
+	transform:translateZ(30px);
+}
+.clock img:nth-child(4){
+	transform:translateZ(40px);
+	animation:round 3s ease 0s forwards;
+}
+
+@-webkit-keyframes round{
+	0%{
+		transform:rotate(-250deg);
+	}
+	100%{
+		transform:rotate(0deg);
+	}
+}
+
+
+.number47{
+	width: 316px;
+	height: 296px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -150px;
+	perspective:300px;
+}
+.number47 img{
+	display: none;
+}
+
+.page2h{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 200px;
+	height: 60px;
+	perspective:300px;
+}
+.page2h p{
+	display: none;
+	font-size: 50px;
+}
+.page3h{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 200px;
+	height: 60px;
+	perspective:300px;
+}
+.page3h p{
+	display: none;
+	font-size: 50px;
+}
+.circles{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -100px;
+}
+.circles b{
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: #ccc;
+	margin-bottom: 10px;
+	border-radius: 50%;
+}
+.circles b.c{
+	background-color: orange;
+}
